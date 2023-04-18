@@ -2,3 +2,4 @@ node_modules/
 dist/
 .env
 *.log
+ecr-login.bat
