@@ -5,7 +5,9 @@
     "author": "psescoboza@gmail.com",
     "license": "MIT",
     "scripts": {
-        "dev": "ts-node ./src/index.ts"
+        "dev": "ts-node ./src/index.ts",
+        "start": "node ./dist/index.js",
+        "build": "tsc"
     },
     "devDependencies": {
         "@types/express": "^4.17.17",

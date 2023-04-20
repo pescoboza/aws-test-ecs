@@ -1,5 +1,5 @@
 FROM node:18-apline as builder
-WORKDIR /pp
+WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 COPY tsconfig.json ./
