@@ -5,12 +5,13 @@
     "author": "psescoboza@gmail.com",
     "license": "MIT",
     "scripts": {
-        "dev": "ts-node ./src/index.ts",
+        "dev": "ts-node -r dotenv/config ./src/index.ts",
         "start": "node ./dist/index.js",
         "build": "tsc"
     },
     "devDependencies": {
         "@types/express": "^4.17.17",
+        "dotenv-cli": "^7.2.1",
         "ts-node": "^10.9.1",
         "typescript": "^5.0.4"
     },
