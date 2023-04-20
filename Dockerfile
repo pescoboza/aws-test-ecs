@@ -17,6 +17,6 @@ WORKDIR /app
 COPY --from=ts-remover /app/dist ./dist/
 COPY --from=ts-remover /app/node_modules/ ./node_modules/
 ENV NODE_ENV prodution
-ENV PORT 8080
-EXPOSE PORT
+ENV PORT 80
+EXPOSE 80
 CMD ["dist/index.js"]
